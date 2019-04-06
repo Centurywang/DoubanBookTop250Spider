@@ -5,7 +5,7 @@ import json
 
 def get_response(url):
     '''
-    获取response相应内容
+    获取response响应内容
     :param url:
     :return: response
     '''
@@ -105,7 +105,7 @@ def run():
     next_url = get_next_url(response)
     # 当下一页存在
     while next_url is not None:
-        # 设置延时4秒 防止封ip
+        # 设置延时2秒 防止封ip
         sleep(2)
         # 1.获取首页response响应
         response = get_response(next_url)
